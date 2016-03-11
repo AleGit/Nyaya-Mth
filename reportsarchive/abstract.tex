@@ -1,0 +1,18 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = ../m2report.tex
+
+The \InstGen framework by Ganzinger and Korovin is a powerfull instrument for instantiation-based
+first order theorem proving
+that relies on the efficiency of satisfiability checkers.
+This framework has been extended to \InstGenEq with the unit superposition calculus for equational reasoning.
+Sticksel's implementation of this extension has clearly demonstrated its practical power,
+but has also highlighted that the calculus is a heavy and crucial addition that does not benefit
+from the sophistication of \SAT solving. 
+%This added a heavy and crucial part that does not use sat solving.
+Maximal completion by Klein and Hirokawa is a simple and smart approach for completion of equational systems
+that exploits the impressive performance of maximal satisfiability solvers.
+This report looks into some possibilities and obstacles to use maximal completion 
+for equational reasoning together with the \InstGen framework
+in the context of an instantiation-based first order theorem prover with equality.
+
+%This is a programmers naive approach to explore the applicability of maximal completion in instantiation-based first order theorem proving with equality.

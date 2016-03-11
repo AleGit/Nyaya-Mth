@@ -1,6 +1,7 @@
 % !TeX encoding = UTF-8
 \documentclass[]{clmthesis}
 
+\input{PACKAGES}
 %=================================================================
 %\input{\string~/packages}
 %=================================================================
@@ -19,10 +20,10 @@
 \supervisor{Dr.~Georg~Moser}
 \institute{Institute of Computer Science}
 \abstract{\input{ABSTRACT}}
-\acknowledgments{\input{THANKS}}
+%\acknowledgments{}
 % END: titlepage setup ----------------------------------------------
 \maketitle
-\acknowledgments{}
+\acknowledgments{\input{THANKS}}
 \tableofcontents
 
 %====================================================================
@@ -41,6 +42,8 @@
 %\subsection{Instantiation-based}
 %\section{iProver-Eq}
 %\section{Conclusion}
+
+\input{Implementation}
 
 
 %===================================================================

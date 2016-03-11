@@ -1,0 +1,330 @@
+% !TEX root = ../m2report.tex
+% !TEX encoding = UTF-8 Unicode
+
+%% ==============================================================
+
+
+%% ==============================================================
+%% ### MY COLOR DEFINITONS ###	
+
+\colorlet{col:em}{Blue}
+
+\colorlet{col:a}{Fuchsia}
+\colorlet{col:b}{Blue}
+\colorlet{col:g}{Gray}
+\colorlet{col:o}{Orange}
+\colorlet{col:hi}{Green}
+\colorlet{col:lo}{Red}
+\colorlet{col:na}{Gray}
+\colorlet{col:n}{Blue}
+\colorlet{col:max}{Violet}
+\colorlet{col:smx}{RoyalBlue}
+
+\newcommand{\colA}{\color{col:a}}	% example a
+\newcommand{\colB}{\color{col:b}}	% example b
+\newcommand{\colG}{\color{col:g}}	% neutral
+\newcommand{\colO}{\color{col:o}}	% old
+\newcommand{\colN}{\color{col:n}}	% new
+\newcommand{\colHI}{\color{col:hi}}	% hi, true
+\newcommand{\colLO}{\color{col:lo}}	% lo, false
+\newcommand{\colNA}{\color{col:na}}	% not available		
+\newcommand{\colMAX}{\color{col:max}}	% maximal
+\newcommand{\colSMX}{\color{col:smx}}	% strictly maximal
+
+%\newcommand{\MYA}[1]{{\color{col:a}#1}}
+%\newcommand{\MYB}[1]{{\color{col:b}#1}}
+%\newcommand{\MYG}[1]{{\color{col:g}#1}}
+%\newcommand{\MYO}[1]{{\color{col:o}#1}}
+
+%\newcommand{\MYHI}[1]{{\color{col:hi}#1}}
+%\newcommand{\MYLO}[1]{{\color{col:lo}#1}}
+%\newcommand{\MYNA}[1]{{\color{col:na}#1}}
+%
+%\newcommand{\MYS}[1]{{\color{Violet}#1}}
+%\newcommand{\MYM}[1]{{\color{RoyalBlue}#1}}
+
+
+%\colorlet{cMAX}{TealBlue}
+%\colorlet{col:SAT}{RoyalBlue}
+\colorlet{cSAT}{RoyalBlue}
+%\colorlet{col:GEN}{Mulberry}
+\colorlet{cUSP}{Purple}
+\newcommand{\MaxSMT}{\textbf{\textcolor{TealBlue}{MAX}\textcolor{RoyalBlue}{SMT}}\!}
+\newcommand{\MaxC}{\textbf{\textcolor{TealBlue}{Maximal}\textcolor{RoyalBlue}{\\Completion}}\!}
+
+
+%% ==============================================================
+
+\newcommand{\myem}{\em\color{col:em}} 	%\newcommand{\MYEM}[1]{\emph{\MYM{#1}}}
+
+%% ==============================================================
+%% ### MISC ###
+
+\newcommand{\mLightning}{{\text{\Lightning}}}
+
+\newcommand{\EQ}{\simeq}
+\newcommand{\NE}{\not\simeq}
+
+\newcommand{\foEQ}{\approx}		%	{\simeq}
+\newcommand{\foNEQ}{\not\foEQ}
+\newcommand{\trEQ}{\approx}
+\newcommand{\trNEQ}{\not\trEQ}
+\newcommand{\sEQ}{=}
+\newcommand{\sNEQ}{\neq}
+
+\newcommand{\disjointunion}{\uplus}
+
+\newcommand{\myc}{\!:\!}
+
+\newcommand\mytop[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+\newcommand{\mygreek}[1]{\selectlanguage{polutonikogreek}#1\selectlanguage{english}}
+%\newcommand{\mygreek}[1]{{\selectlanguage{polutonikogreek}#1}\selectlanguage{english}}
+%\renewcommand{\mygreek}[1]{\foreignlanguage{polutonikogreek}{#1}}
+
+\newcommand{\iSUB}[2]{#2\!\mapsto\!#1}
+%\newcommand{\BgSyntaxTree}{\usebackgroundtemplate{\transparent{0.1}\includegraphics[width=\paperwidth]{SyntaxTreeBackground.png}}}
+
+
+
+
+%% ==============================================================
+%% ### MY MATH ENVIRONMENTS ###
+
+% CL theorem environments: corollary, definition, example, exercise, lemma, proof, proposition, theorem 
+
+\theoremstyle{plain}
+
+\theoremstyle{definition}
+\newtheorem*{mydescription}{Description}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+
+%% ==============================================================
+%% ### MY MATH DEFINITIONS ###
+
+% constant (function, predicate) symbols
+
+\newcommand{\mf}{\mathsf f}
+\newcommand{\mg}{\mathsf g}
+\newcommand{\mh}{\mathsf h}
+\newcommand{\ma}{\mathsf a}
+\newcommand{\mb}{\mathsf b}
+\newcommand{\mc}{\mathsf c}
+\newcommand{\md}{\mathsf d}
+\newcommand{\mx}{\mathsf x}
+\newcommand{\my}{\mathsf y}
+\newcommand{\msucc}{\mathsf s}
+\newcommand{\mpred}{\mathsf p}
+\newcommand{\mA}{\mathsf A}
+\newcommand{\mB}{\mathsf B}
+\newcommand{\mF}{\mathsf F}
+\newcommand{\mL}{\mathsf L}
+\newcommand{\mP}{\mathsf P}
+\newcommand{\mQ}{\mathsf Q}
+
+% caligraphic symbols
+
+\newcommand{\mcA}{\mathcal A}
+\newcommand{\mcB}{\mathcal B}
+\newcommand{\mcC}{\mathcal C}
+\newcommand{\mcD}{\mathcal D}
+\newcommand{\mcE}{\mathcal E}
+\newcommand{\mcF}{\mathcal F}
+\newcommand{\mcG}{\mathcal G}
+\newcommand{\mcI}{\mathcal I}
+\newcommand{\mcL}{\mathcal L}
+\newcommand{\mcM}{\mathcal M}
+\newcommand{\mcP}{\mathcal P}
+\newcommand{\mcR}{\mathcal R}		% no need for extra { ... }
+\newcommand{\mcRr}{\dot{\mcR}}
+\newcommand{\mcRrr}{\ddot{\mcR}}
+\newcommand{\mcS}{\mathcal S}
+\newcommand{\mcT}{\mathcal T}
+\newcommand{\mcV}{\mathcal V}
+
+
+
+% math operators
+
+\DeclareMathOperator{\arity}{arity}
+
+\DeclareMathOperator{\var}{{\mcV}ar}
+\DeclareMathOperator{\pos}{{\mcP}os}
+\DeclareMathOperator{\dom}{{\mcD}om}
+\DeclareMathOperator{\fun}{{\mcF}un}
+\DeclareMathOperator{\subterms}{{\mcS}ub}
+\DeclareMathOperator{\depth}{depth}
+
+
+
+\DeclareMathOperator{\T}{T}
+\DeclareMathOperator{\rng}{rng}
+\DeclareMathOperator{\img}{img}
+\DeclareMathOperator{\mgu}{mgu}
+\DeclareMathOperator{\wgt}{W\!}
+\DeclareMathOperator{\sel}{sel}
+\DeclareMathOperator{\mul}{mul}
+\DeclareMathOperator{\add}{add}
+\DeclareMathOperator{\roo}{root}
+\DeclareMathOperator{\NF}{NF}
+
+
+\newcommand{\VAR}{\mcV\mathtt{ar}}
+% fraktal symbols
+
+\newcommand{\mfC}{{\mathfrak C}}
+\newcommand{\mfE}{{\mathfrak E}}
+\newcommand{\mfL}{{\mathfrak L}}
+\newcommand{\mfR}{{\mathfrak R}}
+\newcommand{\mfS}{{\mathfrak S}}
+\newcommand{\mfT}{{\mathfrak T}}
+
+% tt symbols
+
+\newcommand{\mtS}{{\mathtt S}}
+\newcommand{\sgr}{\succ_{\mathsf gr}}
+
+% combined symbols
+\newcommand{\fP}{\mathpzc{f}}
+\newcommand{\gQ}{\mathpzc{g}}
+
+\newcommand{\mcTFV}{{\mcT(\mcFf,\!\mcV)}}
+\newcommand{\mcFf}{{\mcF_\mf}}
+\newcommand{\mcFP}{{\mcF_\mP}}
+\newcommand{\mcFfP}{\mcFf\,\disjointunion\,\mcFP}
+\newcommand{\mfA}{{\mf\!_\mcA}}
+\newcommand{\mPA}{{\mP\!\!_\mcA}}
+% 
+
+\newcommand{\joins}{\rightarrow^*\cdot^*\!\!\leftarrow}
+\newcommand{\meets}{^*\!\!\leftarrow \cdot \rightarrow^* }
+
+\newcommand{\mNF}[1]{\mathsf{NF}(#1)}	% Normal Form
+\newcommand{\mCP}[1]{\mathsf{CP}(#1)}		% Critical Pair
+\newcommand{\mNFR}{\mNF{\mcR}}		% set of normal forms
+\newcommand{\mCPR}{\mCP{\mcR}}		% set of critical pairs
+
+\newcommand{\MUL}[2]	% multiplication
+{\mf(#1,#2)}			% mul(x,y)
+%{#1\cdot #2}			% x.y
+
+\newcommand{\ADD}[2]	% addition
+{\add(#1,#2)}			% add(x,y)
+%{#1+#2}				% x+y
+
+\newcommand{\MYPOS}[1]{{\mathtt #1}}
+\newcommand{\overlap}[3]{\langle #1,\MYPOS{#2}, #3 \rangle}
+\newcommand{\overlapN}[4]{{_{\overlap{#1}{#2}{#3}}}^{#4:\;}}
+
+\newcommand{\gtkbo}{\succ_\texttt{kbo}}
+\newcommand{\ltkbo}{\prec_\texttt{kbo}}
+\newcommand{\gtlpo}{\succ_\texttt{lpo}}
+\newcommand{\gtpre}{\succ}
+\newcommand{\gtpreq}{\succcurlyeq}
+\newcommand{\ngtpreq}{\not\succcurlyeq}
+\newcommand{\GTKBOW}[2]{\texttt{SMT}(#1\!\succ_\texttt{kbo}\!#2)}
+\newcommand{\GTKBOP}[2]{\texttt{SMT}(#1\!\succ_\texttt{kbo}'\!#2)}
+
+
+\newcommand\encompeq{\mathrel{\ooalign{$\trianglerighteq$\cr\hidewidth\raise.1em\hbox{$\cdot\mkern6mu$}\cr}}}
+\newcommand\encomp{\mathrel{\ooalign{$\vartriangleright$\cr\hidewidth\hbox{$\cdot\mkern6mu$}\cr}}}
+\newcommand\nencompeq{\mathrel{\ooalign{$\ntrianglerighteq$\cr\hidewidth\raise.1em\hbox{$\cdot\mkern6mu$}\cr}}}
+\newcommand\nencomp{\mathrel{\ooalign{$\ntriangleright$\cr\hidewidth\hbox{$\cdot\mkern6mu$}\cr}}}
+
+%\newcommand{\encompeq}{\unrhd}
+%\newcommand{\encomp}{\rhd}
+%\newcommand{\nencompeq}{\ntrianglerighteq}
+%\newcommand{\nencomp}{\ntriangleright}
+
+%\newcommand{\rewrites}[2]{\overset{#1,#2}{\underset{}\longrightarrow}}
+%\newcommand{\rewrites}[2]{\rightarrow_{#1,\cdot,#2}}
+
+\newcommand{\UPL}{\infer
+	[(\sigma)
+		\quad\sigma=\mgu(l,l'), l'\!\not\in\mcV, l\sigma\rho\sgr r\sigma\rho
+	]
+	{L[r]\sigma}
+	{l=r & L[l']}	
+}
+
+\newcommand{\myemptyset}{\varnothing}
+\newcommand{\emptyclause}{\square}
+\newcommand{\ctxhole}{\boxdot}			% \square
+\newcommand\binary{\mathrel{\odot}}
+\newcommand\relation{\mathrel{\circledast}}	% \currency
+
+\newcommand{\InstGen}{\textsf{Inst-Gen}\xspace}
+\newcommand{\InstGenEq}{\textsf{Inst-Gen-Eq}\xspace}
+\newcommand{\Maxcomp}{\textsf{Maxcomp}\xspace}
+\newcommand{\Yices}{\textsf{Yices}\xspace}
+\newcommand{\iProver}{\textsf{iProver}\xspace}
+\newcommand{\iProverEq}{\textsf{iProver-Eq}\xspace}
+\newcommand{\KBO}{\textsf{KBO}\xspace}
+\newcommand{\LPO}{\textsf{LPO}\xspace}
+\newcommand{\SAT}{\textsf{SAT}\xspace}
+\newcommand{\SMT}{\textsf{SMT}\xspace}
+%% ==============================================================
+%% ### TIKZ ###
+
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+\tikzstyle{myrect} = [rectangle,draw=black,rounded corners, minimum height=3em, thick, text centered,text width=5.5em]
+\tikzstyle{mykaro} = [diamond,draw=black,rounded corners, thick, text centered,text width=4em]
+\tikzstyle{mycircle} = [circle,draw=black,thick, text centered, minimum height=3.5em,text width=4em,text width=3.5em]
+\tikzstyle{myarrow} = [thick,->,>=stealth]
+
+\tikzstyle{myframe} = [rectangle,draw=black,rounded corners, minimum height=3em, thick, text centered,text width=5.5em]
+
+%% ==============================================================
+
+%\author{Alexander Maringele}
+%\title[InstGenEq meets Maxcomp]{Instantiation-Based Theorem Proving\\ 
+%%$\uparrow$ 
+%%$\joins$ 
+%$\meets$ 
+%\\Maximal Completion}
+%%\subtitle{Dominik Klein and Nao Horkawa}
+%\date{June 10th, 2015}
+%
+%%% ==============================================================
+
+\lstdefinelanguage{smtlib}{
+	comment={[l];},
+	keywords={assert,xor, or, and},
+	otherkeywords={declare-fun, set-logic},
+	emph={Int,QF_LIA},
+}
+
+\lstset {
+backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+ basicstyle=\ttfamily\footnotesize,        % the size of the fonts that are used for the code
+ breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+ breaklines=true,                 % sets automatic line breaking
+ captionpos=b,                    % sets the caption-position to bottom
+ commentstyle=\color{gray},    % comment style
+ deletekeywords={...},            % if you want to delete keywords from the given language
+ emphstyle=\color{orange},
+ escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+ extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+ frame=none,	% frame=single,	                   % adds a frame around the code
+ keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+ keywordstyle=\color{blue},       % keyword style
+% language=smtlib,	%Octave,                 % the language of the code
+% literate={;},
+% otherkeywords={declare-fun,set-logic,assert,xor,or,and},            % if you want to add more keywords to the set
+%morecomment=[l]{;}	% line comment
+ numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+ numbersep=5pt,                   % how far the line-numbers are from the code
+ numberstyle=\tiny\color{gray}, % the style that is used for the line-numbers
+ rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+ showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+ showstringspaces=false,          % underline spaces within strings only
+ showtabs=false,                  % show tabs within strings adding particular underscores
+ stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+ stringstyle=\color{orange},     % string literal style
+ tabsize=2,	                   % sets default tabsize to 2 spaces
+ title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}

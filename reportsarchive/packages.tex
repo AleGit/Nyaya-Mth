@@ -1,0 +1,58 @@
+% !TEX root = ../m2report.tex
+% !TEX encoding = UTF-8 Unicode
+
+% https://en.wikibooks.org/wiki/LaTeX/Package_Reference
+
+% CL class packages
+%12 \RequirePackage{fancyhdr}					% Extensive control of page headers and footers
+%13 \RequirePackage[english,ngerman]{babel} 		% Multilingual support for Plain TEX or LATEX
+%14 \RequirePackage{graphicx}					% Enhanced support for graphics
+%15 \RequirePackage{amsmath}					% AMS mathematical facilities
+%16 \RequirePackage{amssymb}	
+%17 \RequirePackage{amsthm}					% Typesetting theorems (AMS style)
+%18 \RequirePackage{lmodern}			% 'Latin Modern' replaces 'Computer Modern' 
+%19 ⟨clb | cls⟩\RequirePackage{geometry}			% Flexible and complete interface to document dimensions
+%20 \RequirePackage{microtype}					% Subliminal refinements towards typographical perfection
+%21 \RequirePackage{iflang}						% Expandable checks for the current language
+%22 \RequirePackage[
+%23 		bookmarks,
+%24 		plainpages=false, 
+%25 		pdfpagelabels,
+%26 		colorlinks=false,
+%27 		pdfborder={0 0 0},
+%28 ]{hyperref}									% Extensive support for hypertext
+
+% my additional packagessu
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[
+	usenames,									% 16 colors: white, black, red, green, blue, cyan, magenta, yellow.
+	dvipsnames,									% 64 colors
+	svgnames,									% 150 colors
+	x11names,									% 300 colors
+	table											% color for tables
+]{xcolor}
+
+\usepackage{proof}									% \infer \deduce (for 'proof' environment see 'amsthm' )
+\usepackage{soul}									% \so \caps \ul \st \hl 
+\usepackage[normalem]{ulem}							% \uline \uuline \uwave \sout \xout \dasuline \dotuline
+\usepackage{nameref}
+\usepackage{multirow}								% Create tabular cells spanning multiple rows
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usepackage{marvosym}								% \Lightning
+
+\usepackage{url}									% Verbatim with URL-sensitive line breaks
+%\usepackage{blindtext}
+
+\usepackage{wasysym}
+%\usepackage{eufrak}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}	% \mathpzc
+%\usepackage{showframe}
+
+\usepackage{varioref}
+\usepackage{xspace}			% right spaced after commands \newcommand{\myname}{My Name\xspace}

@@ -1,0 +1,13 @@
+\subsection{Minimal memory footprint in C without sharing}
+
+A inner node includes a symbol pointer and 
+
+char * symbol
+
+\begin{lstlisting}
+typedef struct {
+char *symbol;
+Node **nodes;
+} Node;
+
+\end{lstlisting}
